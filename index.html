@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f4f1e8">
-  <meta name="description" content="RINO / 松藤 輪樽。会社・役職と連絡先。">
+  <meta name="description" content="RINO / 松藤 輪樽。会社・役職、連絡先とPR TIMES掲載記事。">
   <title>RINO | 松藤 輪樽</title>
   <style>
     :root { color-scheme: light; --paper: #f4f1e8; --ink: #173e32; --muted: #51665a; --line: #cbd0c2; }
@@ -15,6 +15,8 @@
     .eyebrow { margin: 0 0 12px; font-size: 10px; font-weight: 600; letter-spacing: .2em; }
     h1 { margin: 0 0 4px; font-family: "Baskerville", "Palatino Linotype", Georgia, serif; font-size: clamp(64px, 19vw, 94px); line-height: 1; font-weight: 400; letter-spacing: -.025em; }
     .name { margin: 10px 0 0; font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: 20px; letter-spacing: .15em; }
+    .portrait { margin: 26px 0 0; }
+    .portrait img { display: block; width: 100%; height: auto; }
     .affiliations { margin: 32px 0 26px; }
     .company-link { display: block; position: relative; }
     .company { position: relative; margin: 0; padding: 14px 24px 13px 55px; border-top: 1px solid var(--line); }
@@ -34,8 +36,15 @@
     .arrow { font-size: 18px; line-height: 1; }
     .email { display: flex; align-items: center; gap: 12px; min-height: 52px; margin-top: 7px; font-size: 12px; overflow-wrap: anywhere; }
     .email-label { color: var(--muted); font-size: 10px; letter-spacing: .1em; }
+    .articles { margin-top: 28px; }
+    .articles h2 { font-size: 13px; letter-spacing: .08em; margin-bottom: 14px; }
+    .article-link { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 18px; padding: 18px 0; border-top: 1px solid var(--line); }
+    .article-link:last-child { border-bottom: 1px solid var(--line); }
+    .article-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--muted); font-size: 10px; line-height: 1.6; letter-spacing: .045em; }
+    .article-title { display: block; margin-top: 6px; font-size: 15px; line-height: 1.65; font-weight: 500; overflow-wrap: anywhere; text-wrap: balance; }
+    .article-link .arrow { color: var(--muted); }
     a:focus-visible { outline: 3px solid #927039; outline-offset: 4px; }
-    @media (hover: hover) { .contact a:hover { background: #e6e8dc; color: var(--ink); } .email:hover, .company-link:hover dt { text-decoration: underline; text-underline-offset: 4px; } }
+    @media (hover: hover) { .contact a:hover { background: #e6e8dc; color: var(--ink); } .email:hover, .company-link:hover dt, .article-link:hover .article-title { text-decoration: underline; text-underline-offset: 4px; } }
     @media (min-width: 640px) { main { padding: 64px 42px 40px; } .affiliations { margin-top: 38px; } .company { padding-block: 17px; } }
   </style>
 </head>
@@ -46,6 +55,9 @@
       <h1>RINO</h1>
       <p class="name">松藤 輪樽</p>
     </header>
+    <figure class="portrait">
+      <img src="assets/rino-portrait.png" alt="RINO（松藤 輪樽）" width="1278" height="1202" fetchpriority="high">
+    </figure>
     <section class="affiliations" aria-label="会社・役職">
       <a class="company-link" href="https://dispensaryjapan.co.jp/" aria-label="Dispensary Japan 株式会社の公式サイト">
         <dl class="company"><dt><img class="company-logo" src="assets/dispensary-japan.png" alt="" width="39" height="36">Dispensary Japan 株式会社</dt><dd lang="en">Founder</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
@@ -67,6 +79,17 @@
         <a href="https://wa.me/818032294781" aria-label="WhatsAppでRINOとのチャットを開く"><span class="contact-copy"><span>WhatsApp</span><span class="contact-action">チャットを開く</span></span><span class="arrow" aria-hidden="true">↗</span></a>
       </div>
       <a class="email" href="mailto:rino@dispensaryjapan.com"><span class="email-label">EMAIL</span><span>rino@dispensaryjapan.com</span></a>
+    </section>
+    <section class="articles" aria-labelledby="articles-title">
+      <h2 id="articles-title">取り組み・掲載記事</h2>
+      <a class="article-link" href="https://prtimes.jp/story/detail/xgygpmTzM3b">
+        <span><span class="article-meta"><span>PR TIMES STORY</span><time datetime="2026-05-26">2026.05.26</time></span><span class="article-title">カンナビノイド原料の出所証明に取り組む理由</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="article-link" href="https://prtimes.jp/main/html/rd/p/000000002.000183687.html">
+        <span><span class="article-meta"><span>PR TIMES / プレスリリース</span><time datetime="2026-05-26">2026.05.26</time></span><span class="article-title">MOU締結：正規流通に向けた4者の基本合意</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
     </section>
   </main>
 </body>
