@@ -22,10 +22,11 @@
     .company { position: relative; margin: 0; padding: 14px 24px 13px 55px; border-top: 1px solid var(--line); }
     .company-link:last-child .company { border-bottom: 1px solid var(--line); }
     .company-arrow { position: absolute; right: 0; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 18px; }
-    .company-logo { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 39px; height: 36px; object-fit: contain; }
+    .company-logo { position: absolute; left: 0; top: 17px; width: 39px; height: 36px; object-fit: contain; }
     .company-logo.anresco { width: 45px; left: -3px; }
     .company dt { font-size: 16px; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
     .company dd { margin: 3px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; letter-spacing: .035em; }
+    .company .company-description { margin-top: 8px; color: var(--ink); font-size: 13px; line-height: 1.7; letter-spacing: 0; text-wrap: balance; }
     h2 { margin: 0 0 12px; font-size: 10px; letter-spacing: .2em; font-weight: 600; }
     .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     a { color: inherit; text-decoration: none; }
@@ -59,17 +60,17 @@
       <img src="assets/rino-portrait.png" alt="RINO（松藤 輪樽）" width="1278" height="1202" fetchpriority="high">
     </figure>
     <section class="affiliations" aria-label="会社・役職">
-      <a class="company-link" href="https://dispensaryjapan.co.jp/" aria-label="Dispensary Japan 株式会社の公式サイト">
-        <dl class="company"><dt><img class="company-logo" src="assets/dispensary-japan.png" alt="" width="39" height="36">Dispensary Japan 株式会社</dt><dd lang="en">Founder</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      <a class="company-link" href="https://dispensaryjapan.co.jp/" aria-label="Dispensary Japan 株式会社の公式サイト" aria-describedby="dj-description">
+        <dl class="company"><dt><img class="company-logo" src="assets/dispensary-japan.png" alt="" width="39" height="36">Dispensary Japan 株式会社</dt><dd lang="en">Founder</dd><dd class="company-description" id="dj-description">CBDなどの原料卸売、製品の受託製造・小売販売。</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
       </a>
-      <a class="company-link" href="https://laflora-sexualwellness.com/" aria-label="La flora 株式会社の公式サイト">
-        <dl class="company"><dt><img class="company-logo" src="assets/la-flora.svg" alt="" width="39" height="36">La flora 株式会社</dt><dd lang="en">Founder</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      <a class="company-link" href="https://laflora-sexualwellness.com/" aria-label="La flora 株式会社の公式サイト" aria-describedby="laflora-description">
+        <dl class="company"><dt><img class="company-logo" src="assets/la-flora.svg" alt="" width="39" height="36">La flora 株式会社</dt><dd lang="en">Founder</dd><dd class="company-description" id="laflora-description">セクシャルウェルネスサプリメントの販売。</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
       </a>
-      <a class="company-link" href="https://canai.jp/" aria-label="Can AI 合同会社の公式サイト">
-        <dl class="company"><dt><img class="company-logo" src="assets/can-ai.svg" alt="" width="39" height="36">Can AI 合同会社</dt><dd lang="en">Representative Member</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      <a class="company-link" href="https://canai.jp/" aria-label="Can AI 合同会社の公式サイト" aria-describedby="canai-description">
+        <dl class="company"><dt><img class="company-logo" src="assets/can-ai.svg" alt="" width="39" height="36">Can AI 合同会社</dt><dd lang="en">Representative Member</dd><dd class="company-description" id="canai-description">社内ノウハウの整理、AI導入支援・アプリ開発。</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
       </a>
-      <a class="company-link" href="https://anresco.com/japan/" aria-label="Anresco Japan株式会社の公式サイト">
-        <dl class="company"><dt><img class="company-logo anresco" src="assets/anresco-japan.png" alt="" width="45" height="36">Anresco Japan株式会社</dt><dd lang="en">Strategic Advisor</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      <a class="company-link" href="https://anresco.com/japan/" aria-label="Anresco Japan株式会社の公式サイト" aria-describedby="anresco-description">
+        <dl class="company"><dt><img class="company-logo anresco" src="assets/anresco-japan.png" alt="" width="45" height="36">Anresco Japan株式会社</dt><dd lang="en">Strategic Advisor</dd><dd class="company-description" id="anresco-description">食品・カンナビノイドの成分分析と品質検査。</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
       </a>
     </section>
     <section aria-labelledby="contact-title">
