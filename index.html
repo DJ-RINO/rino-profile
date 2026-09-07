@@ -16,8 +16,10 @@
     h1 { margin: 0 0 4px; font-family: "Baskerville", "Palatino Linotype", Georgia, serif; font-size: clamp(64px, 19vw, 94px); line-height: 1; font-weight: 400; letter-spacing: -.025em; }
     .name { margin: 10px 0 0; font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: 20px; letter-spacing: .15em; }
     .affiliations { margin: 32px 0 26px; }
-    .company { position: relative; margin: 0; padding: 14px 0 13px 55px; border-top: 1px solid var(--line); }
-    .company:last-child { border-bottom: 1px solid var(--line); }
+    .company-link { display: block; position: relative; }
+    .company { position: relative; margin: 0; padding: 14px 24px 13px 55px; border-top: 1px solid var(--line); }
+    .company-link:last-child .company { border-bottom: 1px solid var(--line); }
+    .company-arrow { position: absolute; right: 0; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 18px; }
     .company-logo { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 39px; height: 36px; object-fit: contain; }
     .company-logo.anresco { width: 45px; left: -3px; }
     .company dt { font-size: 16px; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
@@ -33,7 +35,7 @@
     .email { display: flex; align-items: center; gap: 12px; min-height: 52px; margin-top: 7px; font-size: 12px; overflow-wrap: anywhere; }
     .email-label { color: var(--muted); font-size: 10px; letter-spacing: .1em; }
     a:focus-visible { outline: 3px solid #927039; outline-offset: 4px; }
-    @media (hover: hover) { .contact a:hover { background: #e6e8dc; color: var(--ink); } .email:hover { text-decoration: underline; } }
+    @media (hover: hover) { .contact a:hover { background: #e6e8dc; color: var(--ink); } .email:hover, .company-link:hover dt { text-decoration: underline; text-underline-offset: 4px; } }
     @media (min-width: 640px) { main { padding: 64px 42px 40px; } .affiliations { margin-top: 38px; } .company { padding-block: 17px; } }
   </style>
 </head>
@@ -45,10 +47,18 @@
       <p class="name">松藤 輪樽</p>
     </header>
     <section class="affiliations" aria-label="会社・役職">
-      <dl class="company"><dt><img class="company-logo" src="assets/dispensary-japan.png" alt="" width="39" height="36">Dispensary Japan 株式会社</dt><dd lang="en">Founder</dd></dl>
-      <dl class="company"><dt><img class="company-logo" src="assets/la-flora.svg" alt="" width="39" height="36">La flora 株式会社</dt><dd lang="en">Founder</dd></dl>
-      <dl class="company"><dt><img class="company-logo" src="assets/can-ai.svg" alt="" width="39" height="36">Can AI 合同会社</dt><dd lang="en">Representative Member</dd></dl>
-      <dl class="company"><dt><img class="company-logo anresco" src="assets/anresco-japan.png" alt="" width="45" height="36">Anresco Japan株式会社</dt><dd lang="en">Strategic Advisor</dd></dl>
+      <a class="company-link" href="https://dispensaryjapan.co.jp/" aria-label="Dispensary Japan 株式会社の公式サイト">
+        <dl class="company"><dt><img class="company-logo" src="assets/dispensary-japan.png" alt="" width="39" height="36">Dispensary Japan 株式会社</dt><dd lang="en">Founder</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="company-link" href="https://laflora-sexualwellness.com/" aria-label="La flora 株式会社の公式サイト">
+        <dl class="company"><dt><img class="company-logo" src="assets/la-flora.svg" alt="" width="39" height="36">La flora 株式会社</dt><dd lang="en">Founder</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="company-link" href="https://canai.jp/" aria-label="Can AI 合同会社の公式サイト">
+        <dl class="company"><dt><img class="company-logo" src="assets/can-ai.svg" alt="" width="39" height="36">Can AI 合同会社</dt><dd lang="en">Representative Member</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="company-link" href="https://anresco.com/japan/" aria-label="Anresco Japan株式会社の公式サイト">
+        <dl class="company"><dt><img class="company-logo anresco" src="assets/anresco-japan.png" alt="" width="45" height="36">Anresco Japan株式会社</dt><dd lang="en">Strategic Advisor</dd></dl><span class="company-arrow" aria-hidden="true">↗</span>
+      </a>
     </section>
     <section aria-labelledby="contact-title">
       <h2 id="contact-title">CONTACT</h2>
